@@ -59,6 +59,7 @@ git clone https://github.com/ravindran-dev/tmux.git
 ### 2. Source Config
 
 ```bash
+ln -sf ~/.config/tmux/tmux.conf ~/.tmux.conf
 tmux -f ~/.config/tmux/tmux.conf
 chmod +x ~/.config/tmux/scripts/*.sh
 
