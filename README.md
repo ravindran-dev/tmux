@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Terminal%20Multiplexer-TMUX%20Setup-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/TMUX%20(Terminal%20Multiplexer)-Setup-blueviolet?style=for-the-badge" />
 </p>
 
 <h1 align="center">TMUX - A Modern Tmux Configuration</h1>
@@ -137,7 +137,8 @@ tmux
 
 ##  Screenshots 
 
-<img width="1920" height="1024" alt="image" src="https://github.com/user-attachments/assets/0908bb52-c2b9-42b6-93af-6f5335d04759" />
+<img width="1910" height="1018" alt="image" src="https://github.com/user-attachments/assets/cd526421-9ee5-4a84-b58f-eaef560c2806" />
+
 
 
 
