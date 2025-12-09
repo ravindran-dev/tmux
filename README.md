@@ -80,7 +80,7 @@ Outside tmux:
 tmux
 ```
 
----
+
 
 ## Folder Structure
 
@@ -93,7 +93,7 @@ tmux
     └── bat.sh
 ```
 
----
+
 
 ##  Keymaps
 
@@ -121,7 +121,7 @@ tmux
 | **Copy selection**          | `y` in copy mode | Copy & exit                           |                  
 
 
----
+
 
 ##  System Requirements
 
@@ -132,7 +132,7 @@ tmux
 | Fastfetch | Optional |
 | Kitty | For image passthrough |
 
----
+
 
 ##  Screenshots 
 
@@ -145,14 +145,14 @@ tmux
 Contributions, tweaks, theme variations, and scripts are welcome.
 Open a PR or create a feature issue.
 
----
+
 
 
 ##  License
 
 MIT — Use freely for personal & professional work.
 
----
+
 
 ##  Author — **Ravindran S**
 
