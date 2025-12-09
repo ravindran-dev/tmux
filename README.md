@@ -130,14 +130,15 @@ tmux
 |----------|----------|
 | tmux | >= 3.3 |
 | Zsh | Included |
-| Fastfetch | Optional |
-| Kitty | For image passthrough |
+| Fastfetch | Included |
+| Kitty | Terminal |
 
 
 
 ##  Screenshots 
 
-<img width="1910" height="1018" alt="image" src="https://github.com/user-attachments/assets/cd526421-9ee5-4a84-b58f-eaef560c2806" />
+<img width="1920" height="1024" alt="image" src="https://github.com/user-attachments/assets/8f525c95-84a9-4fa2-a133-38c7618ac8bd" />
+
 
 
 
