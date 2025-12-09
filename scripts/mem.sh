@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 mem=$(free -h | awk '/Mem:/ {print $3 "/" $2}')
 echo "RAM $mem"
 
