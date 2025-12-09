@@ -43,7 +43,33 @@ A clean, professional tmux setup designed for developers who want <b>speed</b>, 
 - Prefix changed to **CTRL + Space**
 - Designed for daily terminal workflows
 - Performance tuned
+  
+## Additional features 
 
+### Animated Welcome Popup
+
+- Displays an animated ASCII boot sequence
+- Runs automatically when starting a new session
+- Can also be triggered manually with Prefix + a
+- Can also be triggered using reload command Prefix + r
+
+### Rectangular Pane Borders
+- Panel header showing command + directory
+
+### Professional Status Bar
+
+- Time and date displayed
+- Section for CPU, Memory, Network integration
+
+### Modular Script System
+
+- Custom metrics scripts stored under ~/.config/tmux/scripts
+- Allows expandable plugin-like architecture
+
+### Custom Fastfetch Launcher
+
+- Prefix + F launches a fastfetch popup
+- Helps identify system configs quickly
 
 
 ## Installation
