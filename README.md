@@ -113,7 +113,8 @@ tmux
 | **Resize Pane Up**          | `Prefix + ↑`     | Expand up                             |                  
 | **Resize Pane Down**        | `Prefix + ↓`     | Shrink down                           |
 | **New Window**              | `Prefix + c`     | Open a new window                     |                  
-| **Rename Window**           | `Prefix + ,`     | Rename current window                 |                  
+| **Rename Window**           | `Prefix + ,`     | Rename current window                 |
+| **Rename Session**          | `Prefix + $`     | Rename current Session                |
 | **Kill Pane**               | `Prefix + x`     | Close active pane                     |                  
 | **Kill Window**             | `Prefix + X`     | Close entire window                   |                  
 | **Copy Mode (scroll)**      | Scroll mouse     | Enter scroll/copy mode                |                  
