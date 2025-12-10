@@ -38,6 +38,7 @@ A clean, professional tmux setup designed for developers who want <b>speed</b>, 
 ###  Fastfetch Integration
 - Direct shortcut to launch Fastfetch
 - Image friendly terminal passthrough
+- Prefix + F launches a fastfetch popup
 
 ###  Developer‑Focused
 - Prefix changed to **CTRL + Space**
@@ -65,11 +66,6 @@ A clean, professional tmux setup designed for developers who want <b>speed</b>, 
 
 - Custom metrics scripts stored under ~/.config/tmux/scripts
 - Allows expandable plugin-like architecture
-
-### Custom Fastfetch Launcher
-
-- Prefix + F launches a fastfetch popup
-- Helps identify system configs quickly
 
 
 ## Installation
@@ -117,6 +113,9 @@ tmux
     ├── cpu.sh
     ├── mem.sh
     └── bat.sh
+    └── ascii.sh
+    └── tmux.sh
+    └── net.sh
 ```
 
 
@@ -140,12 +139,13 @@ tmux
 | **Resize Pane Down**        | `Prefix + ↓`     | Shrink down                           |
 | **New Window**              | `Prefix + c`     | Open a new window                     |                  
 | **Rename Window**           | `Prefix + ,`     | Rename current window                 |
-| **Rename Session**          | `Prefix + $`     | Rename current Session                |
+| **Rename Session**          | `Prefix + .`     | Rename current Session                |
 | **Kill Pane**               | `Prefix + x`     | Close active pane                     |                  
 | **Kill Window**             | `Prefix + X`     | Close entire window                   |                  
 | **Copy Mode (scroll)**      | Scroll mouse     | Enter scroll/copy mode                |                  
 | **Start copy selection**    | `v` in copy mode | Begin selecting text                  |                  
-| **Copy selection**          | `y` in copy mode | Copy & exit                           |                  
+| **Copy selection**          | `y` in copy mode | Copy & exit                           |    
+| **Open Welcome popup**      | `Prefix`+ a      | opens Welcome popup                   |
 
 
 
@@ -180,11 +180,11 @@ Open a PR or create a feature issue.
 
 ##  License
 
-MIT — Use freely for personal & professional work.
+MIT - Use freely for personal & professional work.
 
 
 
-##  Author — **Ravindran S**
+##  Author - **Ravindran S**
 
 Developer • AI/ML Enthusiast • Linux Power User  
 Crafting professional CLI experiences with simplicity and power.
