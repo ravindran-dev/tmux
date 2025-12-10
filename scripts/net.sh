@@ -28,5 +28,5 @@ tx2=$(cat /sys/class/net/$iface/statistics/tx_bytes)
 rx_kb=$(( (rx2 - rx1) / 1024 ))
 tx_kb=$(( (tx2 - tx1) / 1024 ))
 
-printf " [%s] ⬇ %dKB/s ⬆ %dKB/s" "$iface" "$rx_kb" "$tx_kb"
+printf "[%s] ⬇ %dKB/s ⬆ %dKB/s" "$iface" "$rx_kb" "$tx_kb"
 
