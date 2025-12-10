@@ -163,9 +163,7 @@ tmux
 
 ##  Screenshots 
 
-<img width="1920" height="1025" alt="image" src="https://github.com/user-attachments/assets/011fc3dd-2a5b-4298-88d7-4366838fa6b7" />
-
-
+<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/8d6c657b-a22a-49d5-86a5-562a1b99c5e1" />
 
 
 ##  Contributing
