@@ -66,7 +66,10 @@ A clean, professional tmux setup designed for developers who want <b>speed</b>, 
 
 - Custom metrics scripts stored under ~/.config/tmux/scripts
 - Allows expandable plugin-like architecture
-
+  
+### VPN indication
+- Custom script under ~/.config/tmux/scripts/vpn.sh
+- Shows two different variation green when connected, stay in the same theme otherwise.
 
 ## Installation
 
@@ -161,9 +164,11 @@ tmux
 
 
 
-##  Screenshots 
+##  Screenshot
 
-<img width="1920" height="1026" alt="image" src="https://github.com/user-attachments/assets/8d6c657b-a22a-49d5-86a5-562a1b99c5e1" />
+<img width="1920" height="1025" alt="image" src="https://github.com/user-attachments/assets/f32b8395-c329-40f6-b5db-d828af44a117" />
+
+
 
 
 ##  Contributing
