@@ -12,7 +12,7 @@ if [ "$connected" -eq 0 ] && ip -o link show 2>/dev/null | grep -qE 'wg[0-9]*|tu
   connected=1
 fi
 if [ "$connected" -eq 1 ]; then
-  printf "#[bg=#1e1e2e,fg=#00ff87]#[bg=#00ff87,fg=#000000,bold] 🔐 VPN #[bg=#1e1e2e,fg=#00ff87]"
+  printf "#[bg=#1e1e2e,fg=#00ff87]#[bg=#00ff87,fg=#000000,bold] 󰦝 VPN #[bg=#1e1e2e,fg=#00ff87]"
 fi
 exit 0
 
