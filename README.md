@@ -165,8 +165,12 @@ tmux
 
 
 ##  Screenshot
+### When VPN is not connected
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/ab43fb65-5378-4a4d-96be-c7aae38813b7" />
 
-<img width="1920" height="1025" alt="image" src="https://github.com/user-attachments/assets/f32b8395-c329-40f6-b5db-d828af44a117" />
+### When VPN is connected
+<img width="1920" height="1023" alt="image" src="https://github.com/user-attachments/assets/787e8c67-f481-4ffd-b641-14fe2d7e68d7" />
+
 
 
 
