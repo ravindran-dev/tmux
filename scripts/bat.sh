@@ -4,8 +4,8 @@ set -o pipefail
 
 if [ -r /sys/class/power_supply/BAT0/capacity ]; then
   cap=$(cat /sys/class/power_supply/BAT0/capacity)
-  echo "BAT ${cap}%"
+  echo "${cap}%"
 else
-  echo "BAT AC"
+  echo "AC"
 fi
 
