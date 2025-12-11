@@ -194,14 +194,24 @@ MIT - Use freely for personal & professional work.
 Developer • AI/ML Enthusiast • Linux Power User  
 Crafting professional CLI experiences with simplicity and power.
 
-###  Connect
+## 🔗 Connect With Me
 
+You can reach me here:
+
+###  **Socials**
 <a href="www.linkedin.com/in/ravindran-s-982702327" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
 
+
 <a href="https://github.com/ravindran-dev" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=white">
+</a>
+
+
+###  **Contact**
+<a href="mailto:ravindrans.dev@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 
 <a href="mailto:ravindrans.dev@gmail.com" target="_blank">
