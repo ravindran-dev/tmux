@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+set -u
+set -o pipefail
+
 detect_active() {
     for iface in /sys/class/net/*; do
         name=$(basename "$iface")

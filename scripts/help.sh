@@ -1,4 +1,7 @@
 #!/usr/bin/env zsh
+set -u
+set -o pipefail
+
 clear
 
 CYAN="\e[96m"

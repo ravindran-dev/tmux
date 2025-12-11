@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
 set -u
+set -o pipefail
+
 connected=0
 if command -v nmcli >/dev/null 2>&1; then
   if nmcli -t -f TYPE,STATE connection show --active 2>/dev/null | grep -Eq '^(vpn|wireguard):activated'; then
