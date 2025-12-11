@@ -10,6 +10,7 @@ GREEN="\e[92m"
 WHITE="\e[97m"
 MAGENTA="\e[95m"
 RESET="\e[0m"
+GREY="\e[90m"
 
 
 HEIGHT=$(tput lines)
@@ -72,11 +73,11 @@ done <<< "$(echo -e "$ascii_art")"
 
 
 echo
-center_text "${MAGENTA}                   Welcome to the TMUX Terminal${RESET}"
+center_text "${MAGENTA}                    Welcome to the TMUX Terminal${RESET}"
 echo
-center_text "${WHITE}                   $(date '+%a %b %d %I:%M:%S %p %Y')${RESET}"
+center_text "${WHITE}                    $(date '+%a %b %d %I:%M:%S %p %Y')${RESET}"
 echo
 echo
-center_text "${CYAN}                   < Press ENTER to continue >${RESET}"
+center_text "${GREY}                     Press ENTER to continue...${RESET}"
 read
 
