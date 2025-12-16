@@ -1,8 +1,11 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
+cache=~/.config/tmux/scripts/cache/mem
 
-set -u
-set -o pipefail
+if [ -f "$cache" ] && [ $(( $(date +%s) - $(stat -c %Y "$cache") )) -lt 3 ]; then
+  cat "$cache"
+  exit
+fi
 
-mem=$(free -h | awk '/Mem:/ {print $3 "/" $2}')
-echo "RAM $mem"
+mem=$(free -m | awk '/Mem:/ {printf "%d%%", $3*100/$2}')
+echo "$mem" | tee "$cache"
 

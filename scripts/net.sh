@@ -1,35 +1,28 @@
 #!/usr/bin/env bash
-set -u
-set -o pipefail
 
-detect_active() {
-    for iface in /sys/class/net/*; do
-        name=$(basename "$iface")
-        [ "$name" = "lo" ] && continue
+cache_dir="$HOME/.config/tmux/scripts/cache"
+mkdir -p "$cache_dir"
+cache="$cache_dir/net"
 
-        before=$(cat "$iface/statistics/rx_bytes")
-        sleep 0.3
-        after=$(cat "$iface/statistics/rx_bytes")
+iface=$(ip route get 1.1.1.1 2>/dev/null | awk '{print $5; exit}')
+[ -z "$iface" ] && exit
 
-        if [ "$before" != "$after" ]; then
-            echo "$name"
-            return
-        fi
-    done
-}
+rx=$(cat /sys/class/net/$iface/statistics/rx_bytes 2>/dev/null || echo 0)
+tx=$(cat /sys/class/net/$iface/statistics/tx_bytes 2>/dev/null || echo 0)
+now=$(date +%s)
 
-iface=$(detect_active)
+if [ -f "$cache" ]; then
+    read prev_rx prev_tx prev_time < "$cache"
+    dt=$((now - prev_time))
+    [ "$dt" -gt 0 ] || dt=1
+    rx_kb=$(( (rx - prev_rx) / 1024 / dt ))
+    tx_kb=$(( (tx - prev_tx) / 1024 / dt ))
+else
+    rx_kb=0
+    tx_kb=0
+fi
 
-[ -z "$iface" ] && echo "Net: Idle" && exit
+echo "$rx $tx $now" > "$cache"
 
-rx1=$(cat /sys/class/net/$iface/statistics/rx_bytes)
-tx1=$(cat /sys/class/net/$iface/statistics/tx_bytes)
-sleep 1
-rx2=$(cat /sys/class/net/$iface/statistics/rx_bytes)
-tx2=$(cat /sys/class/net/$iface/statistics/tx_bytes)
-
-rx_kb=$(( (rx2 - rx1) / 1024 ))
-tx_kb=$(( (tx2 - tx1) / 1024 ))
-
-printf "[%s] ⬇ %dKB/s ⬆ %dKB/s" "$iface" "$rx_kb" "$tx_kb"
+printf "%s ⬇ %dKB/s ⬆ %dKB/s" "$iface" "$rx_kb" "$tx_kb"
 
