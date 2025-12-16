@@ -1,1 +1,5 @@
 scripts/cache/
+scripts/cache/cpu
+scripts/cache/cpu.prev
+scripts/cache/mem
+scripts/cache/net
